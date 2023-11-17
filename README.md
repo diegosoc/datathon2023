@@ -1,2 +1,2 @@
 # datathon2023
-Datathon from Canary Island 
+Datathon from Canary Islands
