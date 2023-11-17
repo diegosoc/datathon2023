@@ -1,0 +1,82 @@
+{
+    "yaml.schemas": {
+      "https://raw.githubusercontent.com/kedro-org/kedro/develop/static/jsonschema/kedro-catalog-0.18.json": "conf/**/*catalog*"
+    },
+    "python.testing.pytestArgs": [
+      "tests"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestPath": "pytest",
+    "python.testing.autoTestDiscoverOnSaveEnabled": true,
+    "python.pythonPath": "${workspace}",
+    // Disable the Test Explorer UI and use VSCode's native Testing UI instead
+      "testExplorer.useNativeTesting": false,
+    "files.exclude": {
+          "**/.git": true,
+          "**/.svn": true,
+          "**/.hg": true,
+          "**/CVS": true,
+          "**/.DS_Store": true,
+          "**/__pycache__": true,
+      "**/Thumbs.db": true,
+      "xgboost": true,
+      "etc": true,
+      "images": true,
+      "Include":true,
+      "Library": true,
+      "Lib": true,
+      "Scripts": true,
+      ".pytest_cache": true
+
+      },
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.rulers": [
+		120
+	],
+	"files.trimFinalNewlines": true,
+	"files.trimTrailingWhitespace": true,
+	"files.insertFinalNewline": true,
+	"isort.args": [
+		"--py",
+		"310",
+		"--profile",
+		"black"
+	],
+	"ruff.format.args": [
+		"--config=pyproject.toml"
+	],
+	"flake8.args": [
+		"--max-complexity",
+		"10",
+		"--max-line-length",
+		"120"
+	],
+	"python.defaultInterpreterPath": "/opt/conda/bin/python",
+	"[python]": {
+		"editor.defaultFormatter": "charliermarsh.ruff",
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			"source.organizeImports": true
+		},
+		"[yaml]": {
+			"editor.defaultFormatter": "redhat.vscode-yaml"
+		},
+		"[json]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		}
+	},
+	"git.autofetch": true,
+	"terminal.integrated.defaultProfile.windows": "Command Prompt",
+	"jupyter.askForKernelRestart": false,
+	"dev.containers.copyGitConfig": false,
+	"dev.containers.gitCredentialHelperConfigLocation": "none",
+
+	"editor.inlineSuggest.enabled": true,
+	"git.suggestSmartCommit": false,
+	"yaml.format.bracketSpacing": false,
+	"yaml.format.printWidth": 120,
+	"prettier.printWidth": 120,
+	"editor.formatOnSave": true,
+	"editor.guides.bracketPairs": true
+  }
