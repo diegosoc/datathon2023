@@ -6,7 +6,7 @@
         {
             "label": "Run pre-commit",
             "type": "shell",
-            "command": "pre-commit run -a --hook-stage manual",
+            "command": "pre-commit run -a --hook-stage manual"
 
         },
         {
