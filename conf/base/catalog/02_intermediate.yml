@@ -1,0 +1,4 @@
+
+example:
+  type: polars.CSVDataset
+  filepath: data/${globals:folders.02_intermediate}/exmple.csv

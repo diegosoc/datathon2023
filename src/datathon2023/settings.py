@@ -10,7 +10,7 @@ from kedro.config import OmegaConfigLoader
 
 # Installed plugins for which to disable hook auto-registration.
 # Should be automated Kedro-viz, and kedro-mlflow
-# DISABLE_HOOKS_FOR_PLUGINS = ("kedro-mlflow",)
+DISABLE_HOOKS_FOR_PLUGINS = ("kedro-mlflow",) #noneeded for this project
 
 # Class that manages storing KedroSession data.
 # from kedro.framework.session.store import BaseSessionStore

@@ -2,6 +2,6 @@
 import polars as pl
 
 
-def cosa():
+def cosa(cobertura_5g: pl.DataFrame):
     print("Hola")
-    return
+    return pl.DataFrame()

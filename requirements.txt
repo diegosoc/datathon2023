@@ -1,7 +1,7 @@
 cachetools==5.3.1
 fsspec==2023.5.0
 kedro==0.18.13
-kedro_datasets==1.7.0
+kedro_datasets==1.8.0
 kedro_mlflow==0.11.9
 lightgbm==4.1.0
 moto==4.2.3

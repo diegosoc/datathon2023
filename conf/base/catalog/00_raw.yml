@@ -1,14 +1,17 @@
 
 
 cobertura_5g:
-  type: polars.CSVDataset
+  type: polars.LazyPolarsDataset
   filepath: data/${globals:folders.00_raw}/Cobertura 5G.csv
+  file_format: csv
+  load_args:
+    infer_schema_length: 0
 
 
 product_ages:
   type: polars.CSVDataset
-  filepath: data/${globals:folders.00_raw}/{demographics}/CM01_1_product_ages.csv
+  filepath: data/${globals:folders.00_raw}/${globals:demographic}/CM01_1_product_ages.csv
 
 product_gender:
   type: polars.CSVDataset
-  filepath: data/${globals:folders.00_raw}/{demographics}/CM01_1_product_gender.csv
+  filepath: data/${globals:folders.00_raw}/${globals:demographic}/CM01_1_product_gender.csv
