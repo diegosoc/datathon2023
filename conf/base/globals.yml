@@ -1,7 +1,16 @@
-demographic: Comportamiento turístico en RRSS
+rrss: Comportamiento turístico en RRSS
 
 
+gasto_turistico: Encuesta sobre gasto turístico
 
+
+alojamiento_hotel_vac: Alojamiento hotelero y vacacional
+
+
+gasto_destino: Gasto en destino (tarjetas y TPV)
+
+
+conect_aerea: Conectividad aérea (asientos, precios, búsquedas y resrvas)
 
 folders:
   00_raw: "00Documentación"
