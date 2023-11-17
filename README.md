@@ -3,6 +3,10 @@ Datathon from Canary Islands
 
 
 To create the envinroment please run setup_environment.bat and later change the interpreter to this new environment
+
+Also please download the [data](https://experienciatek-my.sharepoint.com/personal/info_experienciatek_com/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Finfo%5Fexperienciatek%5Fcom%2FDocuments%2FDatathon%20Proyectos%2F00Documentaci%C3%B3n)
+and put it in the data folder
+
 In vscode we will recommend to you use the next extensions to develop
 
 "ms-python.python",
