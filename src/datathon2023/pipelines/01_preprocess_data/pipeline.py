@@ -17,6 +17,7 @@ def create_pipeline(**kwargs) -> pipeline:
                 name="cosa",
             )
         ],
+        tags=tags,
 
     )
 

@@ -1,0 +1,4 @@
+
+example:
+  type: polars.CSVDataset
+  filepath: data/${folders.02_intermediate}/Cobertura 5G.csv
