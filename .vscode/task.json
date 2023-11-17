@@ -1,0 +1,26 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run pre-commit",
+            "type": "shell",
+            "command": "pre-commit run -a --hook-stage manual",
+
+        },
+        {
+            "label": "Run coverage test",
+            "type": "shell",
+            "command": "coverage report --skip-covered ",
+            "dependsOn": "Run pytest"
+
+        },
+        {
+            "label": "Run pytest",
+            "type": "python",
+            "command": "pytest"
+
+        }
+    ]
+}

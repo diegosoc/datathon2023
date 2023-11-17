@@ -1,0 +1,86 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+
+default_stages: [manual]
+
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    # Ruff version.
+    rev: v0.1.3
+    hooks:
+      - id: ruff
+        name: "ruff on kedro/, tests/ and docs/"
+        args: ["--fix", "--exit-non-zero-on-fix"]
+      - id: ruff-format
+        name: "ruff firnat on kedro/, tests/ and docs/"
+        args: [--check]
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: trailing-whitespace
+        alias: activate_in_github_action
+      - id: end-of-file-fixer
+        alias: activate_in_github_action
+      - id: check-toml
+        alias: activate_in_github_action
+      - id: check-yaml # Checks yaml files for parseable syntax.
+        alias: activate_in_github_action
+      - id: check-json # Checks json files for parseable syntax.
+        alias: activate_in_github_action
+        exclude: |
+          (?x)(
+              ^.vscode/|
+              ^.devcontainer/
+
+            )
+      - id: check-added-large-files # Check for added large files.
+        alias: activate_in_github_action
+      - id: check-case-conflict # Check for files that would conflict in case-insensitive filesystems
+        alias: activate_in_github_action
+      - id: check-merge-conflict # Check for files that contain merge conflict strings.
+        alias: activate_in_github_action
+      - id: debug-statements # Check for debugger imports and py37+ `breakpoint()` calls in python source.
+        alias: activate_in_github_action
+      - id: requirements-txt-fixer # Sorts entries in requirements.txt
+        alias: activate_in_github_action
+
+
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.6.1
+    hooks:
+        - id: mypy
+          alias: hi
+          args: [--allow-redefinition, --ignore-missing-imports]
+          exclude: |
+              (?x)(
+                ^kedro/templates/|
+                ^docs/|
+                ^features/steps/test_starter/
+              )
+          additional_dependencies:
+          - types-cachetools
+          - types-filelock
+          - types-PyYAML
+          - types-redis
+          - types-requests
+          - types-setuptools
+          - types-toml
+          - attrs
+
+  # - repo: https://github.com/asottile/blacken-docs
+  #   rev: ""  # replace with latest tag on GitHub
+  #   hooks:
+  #       - id: blacken-docs
+  #         additional_dependencies: [black~=22.0]
+  #         entry: blacken-docs --skip-errors
+
+#     - repo: local
+#       hooks:
+#           - id: black
+#             name: "Black"
+#             language: system
+#             files: ^volv_packages/|^tests/
+#             types: [file, python]
+#             entry: black
+# # Manual only
