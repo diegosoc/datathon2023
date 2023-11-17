@@ -6,6 +6,7 @@ cobertura_5g:
   file_format: csv
   load_args:
     infer_schema_length: 0
+    separator: ";"
 
 
 product_ages:
