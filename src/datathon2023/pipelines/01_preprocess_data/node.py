@@ -1,7 +1,10 @@
+import pandas as pd
 
-import polars as pl
 
-
-def cosa(cobertura_5g: pl.DataFrame):
-    print("Hola")
-    return pl.DataFrame()
+def concat_files(
+    comportamientos_municipios: pd.DataFrame,
+    demograficas_municipios: pd.DataFrame,
+    socioeconomicas_municipios: pd.DataFrame,
+):
+    dataframe = pd.concat([comportamientos_municipios, demograficas_municipios, socioeconomicas_municipios])
+    return dataframe
