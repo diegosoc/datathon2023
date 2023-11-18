@@ -13,7 +13,7 @@ def create_pipeline(**kwargs) -> pipeline:
             node(
 
                 func=upload_data_to_elastic,
-                inputs=['demograficas_municipios','params:cloud_id', 'params:apikey_key'],
+                inputs=['demograficas_municipios','params:gasto_turistico_mapping','params:cloud_id', 'params:apikey_key'],
                 outputs=None,
 
                 name="upload_data_to_elastic",
