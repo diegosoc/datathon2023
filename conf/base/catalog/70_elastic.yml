@@ -1,0 +1,5 @@
+
+
+fake_output:
+  type: json.JSONDataSet
+  filepath: data/${globals:folders.70_elastic}/fake_output.json

@@ -1,0 +1,45 @@
+cloud_id: ${oc.env:cloud_id}
+apikey_key: ${oc.env:apikey_key}
+
+#country,mentions,day,age
+rrss_mapping: {
+  "properties":{
+    "mentions": {
+      "type": "double"    },
+    "country":{
+      "type": "keyword"    },
+    "day":{
+      "type": "date",
+      "format": "YYYY-MM-DD"    },
+    "age":{
+      "type": "keyword"    }
+  }
+}
+
+#indicador,dimension,valor_dimension,municipio,anyo,trimestre,valor,valorPrev,fecha,ultima_fecha
+gasto_turistico_mapping: {
+  "properties":{
+    "indicador": {
+      "type": "keyword"    },
+    "dimension":{
+      "type": "keyword"    },
+    "valor_dimension":{
+      "type": "keyword"    },
+    "municipio":{
+      "type": "keyword"    },
+    "anyo":{
+      "type": "keyword"    },
+    "trimestre":{
+      "type": "keyword"    },
+    "valor":{
+      "type": "double"    },
+    "valorPrev":{
+      "type": "double"    },
+    "fecha":{
+      "type": "date",
+      "format": "yyyyMMdd"    },
+    "ultima_fecha":{
+      "type": "date",
+      "format": "yyyyMMdd"    }
+  }
+}

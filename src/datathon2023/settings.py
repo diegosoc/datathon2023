@@ -6,7 +6,11 @@ import datetime
 import os
 from pathlib import Path
 
+from dotenv import load_dotenv
 from kedro.config import OmegaConfigLoader
+from omegaconf.resolvers import oc
+
+load_dotenv()
 
 # Installed plugins for which to disable hook auto-registration.
 # Should be automated Kedro-viz, and kedro-mlflow
@@ -34,6 +38,9 @@ CONFIG_LOADER_ARGS = {
         'spark': ['spark*/'],
         'mlflow*': ['mlflow*/'],  # the star is important or the hook give error (the hook should be updated)
     },
+    'custom_resolvers':{
+        'oc.env':oc.env
+    }
     # 'globals_pattern': '*globals.yml',
 }
 
