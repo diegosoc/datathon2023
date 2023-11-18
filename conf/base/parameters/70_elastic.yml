@@ -1,6 +1,8 @@
 cloud_id: ${oc.env:cloud_id}
 apikey_key: ${oc.env:apikey_key}
 
+
+index: 'gasto_turistico'
 #country,mentions,day,age
 rrss_mapping: {
   "properties":{
