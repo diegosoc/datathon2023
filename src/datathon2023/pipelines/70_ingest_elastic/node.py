@@ -1,15 +1,15 @@
 import os
 
-import pandas as pd
+import polars as pl
 from elasticsearch import Elasticsearch, helpers
 from tqdm import tqdm
 
 
-def _gendata(df: pd.DataFrame):
+def _gendata(df: pl.DataFrame):
     columns = df.columns
-    for row in df.to_dict('records'):
-        lat = row['latitude']
-        lon = row['longitude']
+    for row in df.to_dicts():
+        lat = row['lat']
+        lon = row['lon']
         row['location'] = {'lat': float(lat), 'lon': float(lon)}
         yield row
 

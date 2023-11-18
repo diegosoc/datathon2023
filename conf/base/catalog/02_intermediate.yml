@@ -7,6 +7,10 @@ gasto_turistico:
   type: pandas.CSVDataset
   filepath: data/${globals:folders.02_intermediate}/gasto_turistico.csv
 
-gasto_turistico_with_geodata:
+gasto_turistico_with_geodata@pandas:
   type: pandas.CSVDataset
+  filepath: data/${globals:folders.02_intermediate}/gasto_turistico_with_geodata.csv
+
+gasto_turistico_with_geodata@polars:
+  type: polars.CSVDataset
   filepath: data/${globals:folders.02_intermediate}/gasto_turistico_with_geodata.csv

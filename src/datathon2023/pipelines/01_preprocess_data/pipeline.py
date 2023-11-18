@@ -22,7 +22,7 @@ def create_pipeline(**kwargs) -> pipeline:
             node(
                 func=geodata,
                 inputs=['geodata', 'gasto_turistico'],
-                outputs='gasto_turistico_with_geodata',
+                outputs='gasto_turistico_with_geodata@pandas',
                 name='cosa2',
             )
         ],
