@@ -11,7 +11,7 @@ conf/**/*credentials*
 # ignore everything in the following folders
 
 data/**
-!data/municipalities.json
+!data/ES.txt
 
 # ignore the cohort selection generated files (should be move to the catalog)
 stats.json
