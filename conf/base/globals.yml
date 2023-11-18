@@ -12,3 +12,4 @@ folders:
   06_models: "06_models"
   07_model_output: "07_model_output"
   08_reporting: "08_reporting"
+  70_elastic: "70_elastic"
