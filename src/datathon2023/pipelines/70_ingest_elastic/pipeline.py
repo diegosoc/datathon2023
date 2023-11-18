@@ -3,7 +3,7 @@ import os
 from kedro.pipeline import node
 from kedro.pipeline.modular_pipeline import pipeline
 
-from .node import cosa
+from .node import upload_data_to_elastic
 
 
 def create_pipeline(**kwargs) -> pipeline:
@@ -12,11 +12,11 @@ def create_pipeline(**kwargs) -> pipeline:
         [
             node(
 
-                func=cosa,
-                inputs=['params:cloud_id', 'params:apikey_id', 'params:apikey_key'],
+                func=upload_data_to_elastic,
+                inputs=['demograficas_municipios','params:cloud_id', 'params:apikey_key'],
                 outputs=None,
 
-                name="cosa2",
+                name="upload_data_to_elastic",
             )
         ],
         tags=tags,

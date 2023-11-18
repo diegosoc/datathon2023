@@ -1,3 +1,2 @@
 cloud_id: ${oc.env:cloud_id}
-apikey_id: ${oc.env:apikey_id}
 apikey_key: ${oc.env:apikey_key}

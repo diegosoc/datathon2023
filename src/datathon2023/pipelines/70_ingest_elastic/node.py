@@ -4,13 +4,13 @@ import uuid
 
 import polars as pl
 from elasticsearch import Elasticsearch, helpers
+from tqdm import tqdm
 
 
-def _gendata(df:pl.DataFrame,index,doc_type):
+def _gendata(df:pl.DataFrame,doc_type):
 
     for row in df.iter_rows():
         yield {
-            "_index": index,
             "_type": doc_type,
             "_id": uuid.uuid4(),
             "_source": row.to_dict()
@@ -19,10 +19,19 @@ def _gendata(df:pl.DataFrame,index,doc_type):
 
 
 
-def upload_data(df,cloud_id=os.environ['cloud_id'],apikey_id=os.environ['apikey_id'],apikey_key=os.environ['apikey_key']):
+def upload_data_to_elastic(df,cloud_id=os.environ['cloud_id'],api_key=os.environ['apikey_key']):
 
-    api_key=(apikey_id,apikey_key)
+    # api_key=(apikey_id,apikey_key)
+
     es=Elasticsearch(cloud_id=cloud_id,api_key=api_key)
-    response=helpers.bulk(es,_gendata(df,'datathon2023','test'))
-    print(response)
+    #check the index existe and if exist remove it
+    if es.indices.exists(index='datathon2023'):
+        es.indices.delete(index='datathon2023')
+    es.indices.create(index='datathon2023')
+    number_of_docs=df.shape[0]
+    progress=tqdm(total=number_of_docs,desc='Uploading data to elastic')
+    for ok,action in helpers.streaming_bulk(client=es,index='datathon2023',actions=_gendata(df,'test')):
+        if not ok:
+            print(action)
+        progress.update(1)
     return
