@@ -14,6 +14,7 @@ data/**
 # ignore the cohort selection generated files (should be move to the catalog)
 stats.json
 
+!data/02_geo_info/municipalities.json
 
 ##########################
 # Common files
