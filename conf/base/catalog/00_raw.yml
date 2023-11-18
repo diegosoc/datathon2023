@@ -17,8 +17,50 @@ product_gender:
   type: polars.CSVDataset
   filepath: data/${globals:folders.00_raw}/${globals:rrss}/CM01_1_product_gender.csv
 
-
-
 demograficas_municipios:
   type: polars.CSVDataset
   filepath: data/${globals:folders.00_raw}/${globals:gasto_turistico}/maestro_cm_03_demograficas_municipios (1).csv
+
+comportamientos_municipios:
+  type: polars.CSVDataset
+  filepath: data/${globals:folders.00_raw}/${globals:gasto_turistico}/maestro_cm_03_comportammiento_municipios.csv
+
+socioeconomicas_municipios:
+  type: polars.CSVDataset
+  filepath: data/${globals:folders.00_raw}/${globals:gasto_turistico}/maestro_cm_03_socio_economicas_municipios.csv
+
+hsi_hotel_score_index:
+  type: polars.CSVDataset
+  filepath: data/${globals:folders.00_raw}/${globals:alojamiento_hotelero_vacacional}/CM01_5_HSI.csv
+
+prices_hotel:
+  type: polars.CSVDataset
+  filepath: data/${globals:folders.00_raw}/${globals:alojamiento_hotelero_vacacional}/CM01_5_Prices_hotel.csv
+
+prices_search_date:
+  type: polars.CSVDataset
+  filepath: data/${globals:folders.00_raw}/${globals:alojamiento_hotelero_vacacional}/CM01_5_Prices_search_date.csv
+
+avg_amount:
+  type: polars.CSVDataset
+  filepath: data/${globals:folders.00_raw}/${globals:gasto_destino}/CM01_3_avg_amount (1).csv
+
+seats:
+  type: polars.CSVDataset
+  filepath: data/${globals:folders.00_raw}/${globals:conect_aerea}/CM01_2_seats.csv
+
+searches:
+  type: polars.CSVDataset
+  filepath: data/${globals:folders.00_raw}/${globals:conect_aerea}/CM01_2_searches.csv
+
+top_origins:
+  type: polars.CSVDataset
+  filepath: data/${globals:folders.00_raw}/${globals:conect_aerea}/CM01_2_top_origins.csv
+
+advance_searches:
+  type: polars.CSVDataset
+  filepath: data/${globals:folders.00_raw}/${globals:conect_aerea}/CM01_2_advance_searches.csv
+
+average_price:
+  type: polars.CSVDataset
+  filepath: data/${globals:folders.00_raw}/${globals:conect_aerea}/CM01_2_average_price.csv
