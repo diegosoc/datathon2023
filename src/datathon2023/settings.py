@@ -2,9 +2,6 @@
 from the Kedro defaults. For further information, including these default values, see
 https://kedro.readthedocs.io/en/stable/kedro_project_setup/settings.html."""
 
-import datetime
-import os
-from pathlib import Path
 
 from dotenv import load_dotenv
 from kedro.config import OmegaConfigLoader

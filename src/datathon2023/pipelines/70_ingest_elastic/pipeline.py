@@ -1,4 +1,3 @@
-import os
 
 from kedro.pipeline import node
 from kedro.pipeline.modular_pipeline import pipeline

@@ -1,6 +1,5 @@
 
 import os
-import uuid
 
 import polars as pl
 from elasticsearch import Elasticsearch, helpers
@@ -33,4 +32,3 @@ def upload_data_to_elastic(df,mapping,index,cloud_id=os.environ['cloud_id'],api_
         if not ok:
             print(action)
         progress.update(1)
-    return
