@@ -29,7 +29,7 @@ def upload_data_to_elastic(df,mapping,cloud_id=os.environ['cloud_id'],api_key=os
         es.indices.delete(index='datathon2023')
     es.indices.create(index='datathon2023',body={
         "settings": {'number_of_shards': 1},
-        "mappings": {            mapping}
+        "mappings":          mapping
 
     })
     number_of_docs=df.shape[0]
