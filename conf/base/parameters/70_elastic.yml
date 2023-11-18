@@ -18,7 +18,7 @@ rrss_mapping: {
   }
 }
 
-#indicador,dimension,valor_dimension,municipio,anyo,trimestre,valor,valorPrev,fecha,ultima_fecha
+#indicador,dimension,valor_dimension,municipio,anyo,trimestre,valor,valorPrev,fecha,ultima_fecha,latitude,longitude
 gasto_turistico_mapping: {
   "properties":{
     "indicador": {
@@ -42,6 +42,10 @@ gasto_turistico_mapping: {
       "format": "yyyyMMdd"    },
     "ultima_fecha":{
       "type": "date",
-      "format": "yyyyMMdd"    }
+      "format": "yyyyMMdd"    },
+    "location":{
+      "type": "geo_point"    }
+
+
   }
 }

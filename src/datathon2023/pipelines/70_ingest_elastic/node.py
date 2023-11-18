@@ -9,6 +9,9 @@ from tqdm import tqdm
 def _gendata(df:pl.DataFrame):
     columns=df.columns
     for row in df.to_dicts():
+        lat=row['latitude']
+        lon=row['longitude']
+        row['location']={'lat':float(lat),'lon':float(lon)}
         yield row
 
 
