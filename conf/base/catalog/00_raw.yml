@@ -18,15 +18,15 @@ product_gender:
   filepath: data/${globals:folders.00_raw}/${globals:rrss}/CM01_1_product_gender.csv
 
 demograficas_municipios:
-  type: polars.CSVDataset
+  type: pandas.CSVDataset
   filepath: data/${globals:folders.00_raw}/${globals:gasto_turistico}/maestro_cm_03_demograficas_municipios (1).csv
 
 comportamientos_municipios:
-  type: polars.CSVDataset
-  filepath: data/${globals:folders.00_raw}/${globals:gasto_turistico}/maestro_cm_03_comportammiento_municipios.csv
+  type: pandas.CSVDataset
+  filepath: data/${globals:folders.00_raw}/${globals:gasto_turistico}/maestro_cm_03_comportamiento_municipios.csv
 
 socioeconomicas_municipios:
-  type: polars.CSVDataset
+  type: pandas.CSVDataset
   filepath: data/${globals:folders.00_raw}/${globals:gasto_turistico}/maestro_cm_03_socio_economicas_municipios.csv
 
 hsi_hotel_score_index:
@@ -64,3 +64,11 @@ advance_searches:
 average_price:
   type: polars.CSVDataset
   filepath: data/${globals:folders.00_raw}/${globals:conect_aerea}/CM01_2_average_price.csv
+
+rrss_ages:
+  type: polars.CSVDataset
+  filepath: data/${globals:folders.00_raw}/${globals:rrss}/CM01_1_ages.csv
+
+rrss_gender:
+  type: polars.CSVDataset
+  filepath: data/${globals:folders.00_raw}/${globals:rrss}/CM01_1_gender.csv

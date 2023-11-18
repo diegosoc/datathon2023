@@ -2,3 +2,7 @@
 example:
   type: polars.CSVDataset
   filepath: data/${globals:folders.02_intermediate}/exmple.csv
+
+gasto_turistico:
+  type: pandas.CSVDataset
+  filepath: data/${globals:folders.02_intermediate}/gasto_turistico.csv
