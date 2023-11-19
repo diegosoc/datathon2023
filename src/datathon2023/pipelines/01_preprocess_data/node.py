@@ -8,3 +8,8 @@ def concat_files(
 ):
     dataframe = pd.concat([comportamientos_municipios, demograficas_municipios, socioeconomicas_municipios])
     return dataframe
+
+
+def geodata(geodata: pd.DataFrame, df: pd.DataFrame):
+    geodata = geodata.merge(df, left_on='municipio_geo', right_on='municipio', how='inner')
+    return geodata

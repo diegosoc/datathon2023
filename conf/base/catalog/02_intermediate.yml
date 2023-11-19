@@ -6,3 +6,7 @@ example:
 gasto_turistico:
   type: pandas.CSVDataset
   filepath: data/${globals:folders.02_intermediate}/gasto_turistico.csv
+
+gasto_turistico_with_geodata:
+  type: pandas.CSVDataset
+  filepath: data/${globals:folders.02_intermediate}/gasto_turistico_with_geodata.csv
