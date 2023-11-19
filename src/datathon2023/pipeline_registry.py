@@ -17,5 +17,5 @@ def register_pipelines() -> dict[str, Pipeline]:
 
     pipelines['__default__'] = sum(pipelines.values())
 
-    logger.info(f'Pipelines: {list(pipelines.keys())} has been created')
+    logger.warning(f'Pipelines: {list(pipelines.keys())} has been created')
     return pipelines

@@ -11,7 +11,7 @@ def create_pipeline(**kwargs) -> pipeline:
             node(
                 func=upload_data_to_elastic,
                 inputs=[
-                    'gasto_turistico_with_geodata',
+                    'gasto_turistico_with_geodata@polars',
                     'params:gasto_turistico_mapping',
                     'params:index',
                     'params:cloud_id',
