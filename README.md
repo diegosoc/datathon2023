@@ -1,6 +1,8 @@
 # datathon2023
 Datathon from Canary Islands
 
+Check the graphs created with Kibana and showed in the Datathon [here](https://github.com/diegosoc/datathon2023/tree/main/imageskibana)
+
 To create the envinroment please run setup_environment.bat and later change the interpreter to this new environment
 
 Also please download the [data](https://experienciatek-my.sharepoint.com/personal/info_experienciatek_com/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Finfo%5Fexperienciatek%5Fcom%2FDocuments%2FDatathon%20Proyectos%2F00Documentaci%C3%B3n)
