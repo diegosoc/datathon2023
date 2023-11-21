@@ -1,6 +1,7 @@
 # datathon2023
 Datathon from Canary Islands
 
+Graphics created with Kibana and showed in the Datathon: imageskibana
 
 To create the envinroment please run setup_environment.bat and later change the interpreter to this new environment
 
