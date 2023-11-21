@@ -72,3 +72,12 @@ rrss_ages:
 rrss_gender:
   type: polars.CSVDataset
   filepath: data/${globals:folders.00_raw}/${globals:rrss}/CM01_1_gender.csv
+
+geodata:
+  type: pandas.CSVDataset
+  filepath: data/ES.txt
+  load_args:
+    sep: \t
+    usecols: [7,9,10]
+    header: 0
+    names: ['municipio_geo', 'lat', 'lon']
