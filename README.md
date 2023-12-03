@@ -26,3 +26,7 @@ In vscode we will recommend to you use the next extensions to develop
 "esbenp.prettier-vscode",
 "elagil.pre-commit-helper",
 "charliermarsh.ruff"
+
+Check the graphs here:
+![alt text](https://github.com/diegosoc/datathon2023/tree/main/imageskibana/kibana im1.png)
+
