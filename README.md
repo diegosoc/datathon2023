@@ -29,4 +29,14 @@ In vscode we will recommend to you use the next extensions to develop
 
 Check the graphs here:
 ![alt text](https://github.com/diegosoc/datathon2023/blob/main/imageskibana/kibana%20im1.png)
+![alt text](https://github.com/diegosoc/datathon2023/blob/main/imageskibana/kibana%20im2.png)
+![alt text](https://github.com/diegosoc/datathon2023/blob/main/imageskibana/kibana%20im3.png)
+![alt text](https://github.com/diegosoc/datathon2023/blob/main/imageskibana/kibana%20im4.png)
+![alt text](https://github.com/diegosoc/datathon2023/blob/main/imageskibana/kibana%20im5.png)
+![alt text](https://github.com/diegosoc/datathon2023/blob/main/imageskibana/kibana%20im6.png)
+![alt text](https://github.com/diegosoc/datathon2023/blob/main/imageskibana/kibana%20im7.png)
+![alt text](https://github.com/diegosoc/datathon2023/blob/main/imageskibana/kibana%20im8.png)
+![alt text](https://github.com/diegosoc/datathon2023/blob/main/imageskibana/kibana%20im9.png)
+
+
 
