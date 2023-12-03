@@ -27,17 +27,33 @@ In vscode we will recommend to you use the next extensions to develop
 "elagil.pre-commit-helper",
 "charliermarsh.ruff"
 
-Check the graphs here:
+CHECK THE GRAPHS HERE:
+
+Graph 1: Spending by municipality (MAP)
 ![alt text](https://github.com/diegosoc/datathon2023/blob/main/imageskibana/kibana%20im1.png)
 
-Graph2:
+Graph 2: Spending by municipality per year
 ![alt text](https://github.com/diegosoc/datathon2023/blob/main/imageskibana/kibana%20im2.png)
+
+Graph 3: Spending by income level
 ![alt text](https://github.com/diegosoc/datathon2023/blob/main/imageskibana/kibana%20im3.png)
+
+Graph 4: Spending per overnight stay
 ![alt text](https://github.com/diegosoc/datathon2023/blob/main/imageskibana/kibana%20im4.png)
+
+Graph 5:  Spending by age
 ![alt text](https://github.com/diegosoc/datathon2023/blob/main/imageskibana/kibana%20im5.png)
+
+Graph 6: Spending by education level
 ![alt text](https://github.com/diegosoc/datathon2023/blob/main/imageskibana/kibana%20im6.png)
+
+Graph 7: Spending by employment status
 ![alt text](https://github.com/diegosoc/datathon2023/blob/main/imageskibana/kibana%20im7.png)
+
+Graph 8: Spending by accommodation type
 ![alt text](https://github.com/diegosoc/datathon2023/blob/main/imageskibana/kibana%20im8.png)
+
+Graph 9: Spending by gender
 ![alt text](https://github.com/diegosoc/datathon2023/blob/main/imageskibana/kibana%20im9.png)
 
 
