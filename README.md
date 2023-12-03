@@ -29,6 +29,8 @@ In vscode we will recommend to you use the next extensions to develop
 
 Check the graphs here:
 ![alt text](https://github.com/diegosoc/datathon2023/blob/main/imageskibana/kibana%20im1.png)
+
+Graph2:
 ![alt text](https://github.com/diegosoc/datathon2023/blob/main/imageskibana/kibana%20im2.png)
 ![alt text](https://github.com/diegosoc/datathon2023/blob/main/imageskibana/kibana%20im3.png)
 ![alt text](https://github.com/diegosoc/datathon2023/blob/main/imageskibana/kibana%20im4.png)
