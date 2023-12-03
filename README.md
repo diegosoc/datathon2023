@@ -36,10 +36,12 @@ Graph 2: Spending by municipality per year
 
 
 Graph 3: Spending by income level
+
 ![alt text](https://github.com/diegosoc/datathon2023/blob/main/imageskibana/kibana%20im3.png)
 
 
 Graph 4: Spending per overnight stay
+
 ![alt text](https://github.com/diegosoc/datathon2023/blob/main/imageskibana/kibana%20im4.png)
 
 
